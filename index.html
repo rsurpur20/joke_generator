@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+  </head>
+  <body>
+<h1 id="header">Joke Generator- Machine Learning</h1>
+<h3 id="warning"> Note: This algorithm is generating jokes that can be offensive. It would be ideal to have an algorithm produce non-offensive jokes. However, I take this obstacle to be representitive of how not all data is pure. Also this is symbolic of the way humans learn and perpetuate discriminatory beliefs. If a person was taught sexist and racist beliefs, they would most likely carry those beliefs onto the next generation like how the algorithm capitalized on the racist and sexist jokes that were apart of the 200,000+ datatset.</h3>
+
+<h3>The following jokes are representitve of what the computer came up with. You may note that some jokes are actually funny, some are offensive, some don't make sense, and some are incomplete. These are all distinguishing elements of the machine learning process.</h3>
+
+<h3>Process</h3>
+<p>So I began using a public database <a href="https://www.kaggle.com/abhinavmoudgil95/short-jokes/data">Kaggle Database</a> which had 200,000+ jokes. I then used this training program which incorportates the GPT-2 library <a href="https://colab.research.google.com/drive/1NYeUK8zS3v8cY-UJHB3AkkeDmuN9A5dd">Train a GPT-2 Text-Generating Model</a> All my code can be found here: <a href="https://github.com/rsurpur20/joke_generator">Github Code</a></p>
+
+<h3>Here are five jokes:</h3>
+
+<FORM>
+<INPUT TYPE="button" onClick="history.go(0)" VALUE="Refresh">
+</FORM>
+    <div class="container">
+      <div class="texts">
+          <p id="1"></p>
+      </div>
+      <div class="texts">
+          <p id="2"></p>
+      </div>
+      <div class="texts">
+          <p id="3"></p>
+      </div>
+      <div class="texts">
+          <p id="4"></p>
+      </div>
+      <div class="texts">
+          <p id="5"></p>
+      </div>
+    </div>
+
+
+<script src="scripts.js"></script>
+  </body>
+</html>
